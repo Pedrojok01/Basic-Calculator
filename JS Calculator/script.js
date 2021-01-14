@@ -1,5 +1,6 @@
 $(document).ready(function(){
 
+  // Define calculator object
   const calculator = {
     displayValue: '0',
     firstNumber: null,
@@ -24,18 +25,13 @@ $(document).ready(function(){
       calculator.waitForSecondNumber = false;
       return;
     }
-
-    // If the `displayValue` property does not contain a decimal point
     if (!calculator.displayValue.includes(dot)){
-      // Append the decimal point
       calculator.displayValue += dot;
     }
   }
 
   function handleOperator(nextOperator){
-    // Destructure properties of calculator object
     const {firstNumber, displayValue, calcButton} = calculator
-    //Convert string of "displayValue" into floating-point number
     const inputValue = parseFloat(displayValue);
 
     if (calcButton && calculator.waitForSecondNumber){
@@ -43,10 +39,7 @@ $(document).ready(function(){
       return;
     }
 
-    // verify that `firstNumber` is null and that the `inputValue`
-    // is not a `NaN` value
     if (firstNumber === null && !isNaN(inputValue)){
-      // Update the firstNumber property
       calculator.firstNumber = inputValue;
     }
     else if (calcButton){
