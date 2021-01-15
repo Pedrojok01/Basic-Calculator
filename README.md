@@ -12,5 +12,5 @@ It works exactly like the calculator you're used to:
 
 The pogram is divided into 3 files:
 - The .html webpage ;
-- The .js file which allow the calculator to work ;
+- The .js file which allow the calculator to work as intended ;
 - The .css which contains custom designs for the webpage.
