@@ -1,8 +1,6 @@
 # Basic-Calculator embedded in Webpage
 Using JavaScript, HTML and CSS.
 
-The CSS design has been mostly inspired from: https://freshman.tech/css-grid-calculator/
-
 It works exactly like the calculator you're used to:
 - A display screen updated in real time after each input ;
 - All 4 basics operators are supported (+,-,*,/) ;
